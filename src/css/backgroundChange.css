@@ -1,0 +1,62 @@
+* {
+  border-radius: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+* button {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+body #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+body #app button#btnChangeBg {
+  color: #333;
+  border: 0;
+  background: none;
+  border: 1px solid #333;
+  padding: 12px;
+  margin-top: 30px;
+}
+body #container {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  background: #222;
+  font-size: 20px;
+  color: #FFF;
+}
+@media (max-width: 600px) {
+  body #container {
+    margin: 10px;
+  }
+}
+body #container span {
+  font-size: 40px;
+}
+@media (max-width: 600px) {
+  body #container span {
+    font-size: 20px;
+  }
+}
+body #container #dynamicColor {
+  color: rgb(97, 97, 210);
+}
+@media (max-width: 600px) {
+  body #container #dynamicColor {
+    font-size: 20px;
+  }
+}
+body #container #block-btn {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=backgroundChange.css.map */

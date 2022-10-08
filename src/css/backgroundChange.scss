@@ -1,0 +1,63 @@
+$main-color: purple;
+$text-color: #FFF;
+$font-size-mobile: 20px;
+
+* {
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    button {
+        cursor: pointer;
+        font-size: 15px;
+    }
+}
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    
+    #app {
+        max-width: 1280px;
+        margin: 0 auto;
+        text-align: center;
+
+        button#btnChangeBg {
+            color: #333;
+            border: 0;
+            background: none;
+            border: 1px solid #333;
+            padding: 12px;
+            margin-top: 30px;
+        }
+
+    }
+    #container {
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+        padding: 1rem;
+        background: #222;
+        font-size: 20px;
+        color: #FFF;
+        @media (max-width: 600px){
+            margin: 10px;
+        }
+
+        span {
+            font-size: 40px;
+            @media (max-width: 600px){
+                font-size: $font-size-mobile;
+            }
+        }
+        #dynamicColor {
+            color: rgb(97, 97, 210);
+            @media (max-width: 600px){
+                font-size: $font-size-mobile;
+            }
+        }
+        #block-btn {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
